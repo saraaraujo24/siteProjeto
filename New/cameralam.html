@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="shortcut icon" href="log.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css"  href="seg.css">
+    <link rel="stylesheet" type="text/css"  href="normalize.css">
+
+    
+    <title>Videos</title>
+</head>
+<style>
+
+#log{
+    width:"100%"; 
+    height:"120";
+    align-items: left;
+    padding: 10px 10px 20px 20px;
+}
+.Avaliação{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .avaliar{ 
+        width:"30%"; 
+        width:290px;
+        height: 310px;
+        background-color:#367896;
+      
+    }
+
+@media screen and (min-width: 768px) {
+     #log{ flex-direction: row;
+         flex-wrap:wrap;
+         width:"100%" 
+    }
+    
+}
+</style>
+<body>   
+    <nav>
+        <img src="log.png"  width="170"  height="170"  id="log" >
+        <ul id="menu">
+            <nav class="classnav">
+
+            
+                <li class="classli"><a class="classa" href="Index.html">Inicio</a></li>
+                <li class="classli"><a class="classa" href="Dicas.html">Dicas</a>
+                    <ul class="submenu">
+                        <li ><a class="classa" href="video.html">Videos</a></li>
+                    
+                    </ul>
+                </li>
+                    
+                <li class="classli"><a class="classa" href="#Contato">Contato</a></li>
+            </nav>
+        </ul>
+           
+    </nav>
+    <section id="sobre" >
+        <br><br><br>
+        <h1 class="h1">Lâmpada Câmera</h1>
+<br><br><br><br><br>
+
+   <center class="video"><iframe width="640" height="360" src="https://www.youtube.com/embed/WSZ8WBB2noU" 
+    title="CONFIGURANDO LÂMPADA CÂMERA IP WIFI 360° VR PASSO A PASSO" 
+    frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe></center>   
+        <br><br>    
+    <center><h2 class="inf">Informações do Video</h2></center>
+        <p class="center">A instalação é muito simples, basta rosqueá-la como uma câmera comum. (necessita rede wifi ao alcance)
+            A imagem pode ser vista ao vivo em seu SmartPhone (iPhone ou Android) App IPC360
+            É possível acender a luz remotamente através da internet, conversar com quem esta na sala 
+            (você ouve tudo o que esta sendo falado onde esta a câmera e também é possível fala
+            r no seu smartphone e o som sai no auto falante da câmera)</p>
+
+   <center><h2 class="inf">Ferramentas para Instalação</h2></center><br><br><br>
+
+                 <div class="ferramenta">
+                    <div class ="elemento">
+                         <p class="ferra">Tomada</p><br><br>
+                         <img src="vid/tomada.png" width=150px;  height=130%; >
+                    </div> 
+                    <div class ="elemento">
+                        <p class="ferra">Celular com internet</p><br><br>
+                        <img src="vid/celularnet.png" width=180px;  height=130%; >
+                        
+                    </div> 
+                    <div class ="elemento">
+                        <p class="ferra">Baixe o App IPC360 </p>
+                        <img src="vid/appAPC360.png" width=190px;  height=250%; >
+                    </div>
+                   
+                 </div>
+      
+     <br><br><br><br> <br><br><br><br> <br><br><br><br>    
+
+     
+    <div class="Avaliação" >
+      
+        <div class="avaliar">
+          
+            <p class="nomeCont">José Ricardo</p>
+            <p class="Contato1">Atendimento: 9 hrs às 17 hrs<br>Segunda à Sexta</p>
+            <p> <img src="vid/telefone.png"  width="30"  height="30"  class="imgCont" align="left" >
+           <a  class="contatos"   href="tel:+5571999999999">(35) 99689-9799</a>
+           <br><br>
+           <p class="Ava1" >Avaliação do Serviço</p>
+           
+           <ul class="avaliacao"> 
+             <li class="star-icon ativo" data-avaliacao="1"></li>
+             <li class="star-icon " data-avaliacao="2"></li>
+             <li class="star-icon " data-avaliacao="3"></li>
+             <li class="star-icon " data-avaliacao="4"></li>
+             <li class="star-icon " data-avaliacao="5"></li>
+           </ul>
+           <script>
+            var stars = document.querySelectorAll('.star-icon');
+                  
+                  document.addEventListener('click', function(e){
+                    var classStar = e.target.classList;
+                    if(!classStar.contains('ativo')){
+                      stars.forEach(function(star){
+                        star.classList.remove('ativo');
+                      });
+                      classStar.add('ativo');
+                      console.log(e.target.getAttribute('data-avaliacao'));
+                    }
+                  });
+                 
+           </script>
+           
+        </div>
+        <div class="avaliar">
+            <p class="nomeCont">Daniel Araújo</p>
+            
+           <br><br>
+           <p class="Ava1" >Avaliação do Serviço</p>
+           
+           <ul class="avaliacao1"> 
+             <li class="star-icon ativo" data-avaliacao="1"></li>
+             <li class="star-icon " data-avaliacao="2"></li>
+             <li class="star-icon " data-avaliacao="3"></li>
+             <li class="star-icon " data-avaliacao="4"></li>
+             <li class="star-icon " data-avaliacao="5"></li>
+           </ul>
+           <script>
+            var stars = document.querySelectorAll('.star-icon');
+                  
+                  document.addEventListener('click', function(e){
+                    var classStar = e.target.classList;
+                    if(!classStar.contains('ativo')){
+                      stars.forEach(function(star){
+                        star.classList.remove('ativo');
+                      });
+                      classStar.add('ativo');
+                      console.log(e.target.getAttribute('data-avaliacao'));
+                    }
+                  });
+                 
+           </script>
+        </div>
+          
+        <div class="avaliar">
+            <p class="nomeCont">Marcelo Faria</p>
+            <p class="Contato1">Atendimento: 9 hrs às 17 hrs<br>Segunda à Sexta</p>
+            <p> <img src="vid/telefone.png"  width="30"  height="30"  class="imgCont" align="left" >
+           <a  class="contatos"   href="tel:+5571999999999">(35) 99731-9789</a>
+           <br><br>
+           <p class="Ava1" >Avaliação do Serviço</p>
+           
+           <ul class="avaliacao2"> 
+             <li class="star-icon ativo" data-avaliacao="1"></li>
+             <li class="star-icon " data-avaliacao="2"></li>
+             <li class="star-icon " data-avaliacao="3"></li>
+             <li class="star-icon " data-avaliacao="4"></li>
+             <li class="star-icon " data-avaliacao="5"></li>
+           </ul>
+           <script>
+            var stars = document.querySelectorAll('.star-icon');
+                  
+                  document.addEventListener('click', function(e){
+                    var classStar = e.target.classList;
+                    if(!classStar.contains('ativo')){
+                      stars.forEach(function(star){
+                        star.classList.remove('ativo');
+                      });
+                      classStar.add('ativo');
+                      console.log(e.target.getAttribute('data-avaliacao'));
+                    }
+                  });
+                 
+           </script>
+        </div>   
+
+    </div>
+
+     <footer>
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <p>Desenvolvedores Tech Developers</p>
+       
+    </footer>
+  
+    </section>
+
+
+</body>
+</html>

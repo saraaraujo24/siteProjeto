@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="log.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css"  href="normalize.css">
+    <meta charset="UTF-8">
+    
+<title>Automação Residencial</title>
+</head>
+<style>
+    #imagem{
+            width:100%;   
+            background-position: center; 
+    }
+    #log{
+        width:"100%"; 
+        height:"120";
+        align-items: left;
+        padding: 10px 10px 20px 20px;
+    }
+    #lampada{
+        width:"100%"; 
+        height:"120";
+        position:center;
+        padding: 10px 10px 20px 20px;
+        
+    }
+   
+   
+   
+    @media screen and (min-width: 768px) {
+     #log{ flex-direction: row;
+         flex-wrap:wrap;
+         width:"100%" 
+    }
+    #lampada{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+}
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .elemento { 
+        width:"100%"; 
+        width:300px;
+        height: 300px;
+        background-color:#de7e18;
+      
+    }
+    .letra {
+        line-height:1.7;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
+        color:#ede9e1;
+        width:"100%"; 
+        width:300px;
+        text-align: center;
+        font-weight: bold;
+       
+    }
+    .leter {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 120%;
+      color:#005072 ;
+      width:"100%"; 
+      width:300px;
+      text-align: center;
+     
+  }
+  .elementer{ 
+        width:"100%"; 
+        width:300px;
+        height: 300px;
+        background-color:#e68f32;
+  }
+
+   
+
+</style>
+<body>
+    
+    <nav>
+        <img src="log.png"  width="170"  height="170"  id="log" >
+        <ul id="menu">
+            <nav class="classnav">
+
+            
+                <li class="classli"><a class="classa" href="Index.html">Inicio</a></li>
+                <li class="classli"><a class="classa" href="Dicas.html">Dicas</a>
+                    <ul class="submenu">
+                        <li ><a class="classa" href="video.html">Videos</a></li>
+                    
+                    </ul>
+                </li>
+                    
+                <li class="classli"><a class="classa" href="#Contato">Contato</a></li>
+            </nav>
+        </ul>
+           
+    </nav>
+    <img src="vid/home.png"  id="imagem">
+    <section id="sobre">
+        <h2>Bem-Vindo! </h2>
+        <div   aling="middle">
+        <img src="lam.png"  width="88"  height="110"  id="lampada">
+        </div>
+        <h3 class="lam"> Sobre Nós </h3>
+        <p class="inicio">
+            Desde 2015 à Casa Connect Serviços sempre teve um único objetivo:<br> Ser a solução  das suas dores de cabeça recomendando os maiores especialistas<br> em manutenção,
+            instalação e automação residencial!<br>Como? Através do nosso maior diferencial!<br>Trabalhamos com uma equipe  competente e que realizam serviços somente na suas maiores especialidades,<br>
+            garantindo assim , o melhor em cada um dos atendimentos!<br> Contando também com parceiros que tem os melhores preços e formas de pagamentos flexiveis<br> e um atendimento humanizado.</text>
+        </p>
+        <br>   
+        <br>  
+         <br>
+            <br>
+     <center><h1 class="texto">Serviços</h1></center>
+    
+    <hr width ="80%" aling="center " size="5" color="#de7e18">
+    <br> <br>    <br>
+   
+
+
+    <div class="container">
+        <div class ="elemento">
+              <h3  class="leter">Automação Residencial</h3><br>
+              <p class="letra"> Transforme sua casa com a automação de nossos parceiros.<br>Modernidade e praticidade para você.Sua casa inteligente começa aqui!<br> Muito conforto e tecnologia para você.</p>
+           
+        </div> 
+        <div class ="elementer">
+            <h3  class="leter">Manutenção</h3>
+            <br>
+            <p class="letra" > A manutenção residencial é um conjunto de ações feito em sua casa na cidade,<br> no sítio ou em seu apartamento. 
+                Ao realizar regularmente o serviço de manutenção, saiba que sua residência estará segura e não terá problemas.</p>
+
+        </div>
+        <div class ="elemento">
+            <h3 class="leter">Instalação</h3>
+            <br>
+            <p class="letra"> Profissionais experientes em instalação elétrica, garantindo segurança e eficiência.<br>
+                Serviços de instalação elétrica em casas, com qualidade e rapidez garantida.</p>
+
+        </div>
+
+
+
+
+        
+    </div>
+             <br> 
+     <br>   
+     <br>         
+     <br>   
+     <br>   
+     <br>   
+     <br>   
+     <br>   
+     <br> 
+    
+     <footer>
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        <p>Desenvolvedores Tech Developers</p>
+       
+    </footer>
+</section>
+</body>
+
+</html>

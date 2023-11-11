@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css"  href="seg.css">
+    <link rel="stylesheet" type="text/css"  href="normalize.css">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="log.png" type="image/x-icon" />
+    <title>Videos</title>
+</head>
+<style>
+
+#log{
+    width:"100%"; 
+    height:"120";
+    align-items: left;
+    padding: 10px 10px 20px 20px;
+}
+@media screen and (min-width: 768px) {
+     #log{ flex-direction: row;
+         flex-wrap:wrap;
+         width:"100%" 
+    }
+}
+</style>
+<body>   
+    <nav>
+        <img src="log.png"  width="170"  height="170"  id="log" >
+        <ul id="menu">
+            <nav class="classnav">
+
+            
+                <li class="classli"><a class="classa" href="Index.html">Inicio</a></li>
+                <li class="classli"><a class="classa" href="Dicas.html">Dicas</a>
+                    <ul class="submenu">
+                        <li ><a class="classa" href="video.html">Videos</a></li>
+                    
+                    </ul>
+                </li>
+                    
+                <li class="classli"><a class="classa" href="#Contato">Contato</a></li>
+            </nav>
+        </ul>
+           
+    </nav>
+    <section id="sobre" >
+        <br><br><br>
+        <h1 class="h1">Controle Universal</h1>
+<br><br><br>
+    
+       <center class="video"><iframe  width="700" height="364"src="https://www.youtube.com/embed/-W0Q1N3uMI4?si=2_HEDWstGEBrZNG4"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br><br>    
+        <center><h2 class="inf">Informações do Video</h2></center><br></h2>
+        <center><h2>Controle Universal i2Go Home<br><br></h2></center>
+            <p class="center"> 
+                O controle universal i2go e instalado próximo ao dispositivo que você quer que ele se comunique,
+                1° ligue o aparelho em uma tomada ou entrada usb em seguida baixe o app i2go home e faça o cadastro.<br>
+                Após isso ele ira se conectar a sua rede wireless automaticamente e ira identificar sua smart Tv ou
+                Dispositivo que deseja conectar ao mesmo.
+                </p>
+                <br><br>
+       <center><h2 class="inf">Ferramentas para Instalação</h2></center><br><br><br>
+    
+                    <div class="ferramenta">
+                        <div class ="elemento">
+                            <p class="ferra">Amazon Alexa</p>
+                            <img src="vid/alexa.png" width=180px;  height=185%; >
+            
+                        </div> 
+                        <div class ="elemento">
+                            <p class="ferra">Àcesso a internet 2G</p><br><br>
+                        <img src="vid/sinalwifi.png" width=140px;  height=140%; >
+                        </div> 
+                        <div class ="elemento">
+                            <p class="ferra">Baixe o App Smart Life </p>
+                            <img src="vid/appSmartlife.png" width=130px;  height=210%; >
+                        </div>
+                       
+                    </div>
+                    <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+        <center><h1 >Prestadores de Serviços</h1></center>
+ <div class="coluna">
+    <!--Primeiro-->
+       <div class="card">
+        
+        <img src=".ImaCont/jr.png"  width="110"  height="110"  class="imgLogCont" >
+        <p class="nomeCont">José Ricardo</p>
+         <p class="TituloSobre">Sobre</p>
+         <p class="TSobre">José Ricardo é um prestador de serviço de controle universal com 10 anos de experiência. 
+          Ele é formado em eletrônica e possui especialização em manutenção de controles remotos é um profissional qualificado e experiente.
+        </p>
+        <li><a class="contatos1"  href=" ">Contato</a></li> 
+       <p class="Ava1" >Avaliação do Serviço</p>
+    
+       <ul class="avaliacao"> 
+         <li class="star-icon ativo" data-avaliacao="1"></li>
+         <li class="star-icon " data-avaliacao="2"></li>
+         <li class="star-icon " data-avaliacao="3"></li>
+         <li class="star-icon " data-avaliacao="4"></li>
+         <li class="star-icon " data-avaliacao="5"></li>
+       </ul>
+       <script>
+        var stars = document.querySelectorAll('.star-icon');
+              
+              document.addEventListener('click', function(e){
+                var classStar = e.target.classList;
+                if(!classStar.contains('ativo')){
+                  stars.forEach(function(star){
+                    star.classList.remove('ativo');
+                  });
+                  classStar.add('ativo');
+                  console.log(e.target.getAttribute('data-avaliacao'));
+                }
+              });
+             
+       </script>
+       </div>
+        <!--segundo-->
+       <div class="card">
+        <img src=".ImaCont/jr.png"  width="110"  height="110"  class="imgLogCont" >
+       <p class="nomeCont">Ana Maria</p>
+       <p class="TituloSobre">Sobre</p>
+       <p class="TSobre">Ana Maria é uma prestadora de serviço de controle universal com mais de 5 anos de experiência.
+         Ela é qualificada para realizar a instalação, 
+        manutenção e conserto de controles remotos universais.<br><br>
+        <li><a class="contatos1"  href=" ">Contato</a></li> 
+       <p class="Ava1" >Avaliação do Serviço</p>
+       
+       <ul class="avaliacao1"> 
+         <li class="star-icon ativo" data-avaliacao="1"></li>
+         <li class="star-icon " data-avaliacao="2"></li>
+         <li class="star-icon " data-avaliacao="3"></li>
+         <li class="star-icon " data-avaliacao="4"></li>
+         <li class="star-icon " data-avaliacao="5"></li>
+       </ul>
+       <script>
+        var stars = document.querySelectorAll('.star-icon');
+              
+              document.addEventListener('click', function(e){
+                var classStar = e.target.classList;
+                if(!classStar.contains('ativo')){
+                  stars.forEach(function(star){
+                    star.classList.remove('ativo');
+                  });
+                  classStar.add('ativo');
+                  console.log(e.target.getAttribute('data-avaliacao'));
+                }
+              });
+             
+       </script>
+       </div>
+        <!--terceiro-->
+       <div class="card">
+        <img src=".ImaCont/jr.png"  width="110"  height="110"  class="imgLogCont" >
+        <p class="nomeCont">Marcelo Faria</p>
+        <p class="TituloSobre">Sobre</p>
+       <p class="TSobre">Marcelo Faria é um prestador de serviço de controle universal com mais de 3 anos de experiência.
+         Ele é qualificado para realizar a instalação,
+         manutenção e conserto de controles remotos universais.<br><br>
+         <li><a class="contatos1"  href=" ">Contato</a></li> 
+       <p class="Ava1" >Avaliação do Serviço</p>
+       
+      <ul class="avaliacao2"> 
+         <li class="star-icon ativo" data-avaliacao="1"></li>
+         <li class="star-icon " data-avaliacao="2"></li>
+         <li class="star-icon " data-avaliacao="3"></li>
+         <li class="star-icon " data-avaliacao="4"></li>
+         <li class="star-icon " data-avaliacao="5"></li>
+       </ul>
+       <script>
+        var stars = document.querySelectorAll('.star-icon');
+              
+              document.addEventListener('click', function(e){
+                var classStar = e.target.classList;
+                if(!classStar.contains('ativo')){
+                  stars.forEach(function(star){
+                    star.classList.remove('ativo');
+                  });
+                  classStar.add('ativo');
+                  console.log(e.target.getAttribute('data-avaliacao'));
+                }
+              });
+             
+       </script>
+       </div>
+ </div>
+         <br>   
+         <br>   
+         <br> 
+         <footer>
+            <br>   
+         <br>   
+         <br>   
+         <br> 
+            <p>&copy; 2023 - Todos os direitos reservados</p>
+            <p>Desenvolvedores Tech Developers</p>
+        </footer>
+      
+        </section>
+    
+  
+
+
+</body>
+</html>

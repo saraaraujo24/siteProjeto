@@ -1,0 +1,447 @@
+#sobre {
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: left;
+    padding:0;
+    background-color:#3b84a8;
+    width: 100%;
+}
+
+.titulo{justify-self: start;
+    display:flex;
+    flex-direction: column;
+    color:#de7e18;
+    text-align: center;
+    font-size: Nunito, sans-serif;
+    font-size: 190%;
+    letter-spacing: 1px;
+}
+.inf{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 180%;/*texto principal*/
+    color:azure;
+}
+video {
+    width: 100%;
+    height: auto;
+  }
+.ferramenta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.elemento { 
+    
+    width:180px;
+    height: 200%;
+    
+
+  
+}
+.ferra{
+    font-family:Arial;
+    font-size: 170%;
+    color:#f3630f;
+    width:"100%"; 
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+
+.letra{
+   
+    font-size: 90%;
+    color:#FFFFFF;
+    width:"100%"; 
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.Contato1{
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    color:#FFFFFF;
+    width:"100%"; 
+    line-height:25px ;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.Ava1{
+    font-size: 150%;
+    color:#FFFFFF;
+    width:"100%"; 
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.Ava{
+    font-size: 150%;
+    color:#FFFFFF;
+    width:"100%"; 
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.link{ 
+    color:#033c54 ;
+    width:"100%"; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    
+}
+.lin {
+    list-style-type: none;
+    margin: 3%;
+    width:"100%"; 
+    text-align: right;
+    color:white;/* Cor de destaque ao passar o mouse */
+    border-color: white;  
+}
+
+
+
+/*css dos prestadores de serviços-----------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .imgLogCont{
+    float:left;
+      flex-wrap:wrap;
+      width:"100%" ;
+
+  }
+
+.coluna{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+ }
+    
+.coluna .card{
+  position: relative;
+  padding: 1px;
+  background-color: #3b84a8;
+  margin: 10px;
+  border: 1px solid #f3630f;
+  border-radius: 5px;
+  width:"100%"; 
+  width:370px;
+  height: 490px;
+  text-align: center;
+}
+
+.TituloSobre{
+  line-height:20px ;
+  text-align: justify;
+  color:#FFFFFF;
+  line-height:1.2;
+  font-size:170%;
+}
+.TSobre{
+  text-align: center;
+  color:#FFFFFF;
+  line-height:1.2;
+  font-size:120%;
+  margin: 0px 40px 0px 40px;
+  
+}
+.contatos1{
+  color:#de7e18;
+  position: relative;
+  margin-right:70%;
+  top: 10%;
+  line-height:20px ;
+  font-size:140%;
+  
+}
+.contatos{
+  color:#de7e18;
+  position: relative;
+  margin-right: 14%;
+  top: 10%;
+  line-height:30px ;
+  font-size:140%;
+  
+}
+.imgCont{
+  float: left;
+  border: transparent thin solid;
+  padding: 3px;
+  margin: 10% ;
+  margin: 0% ;
+  margin-left: 4%;
+  color:#FFFFFF;
+}
+.nomeCont{
+ display: flex;
+  font-size:200%;
+  color:#05131f;
+  line-height:60px ;
+  text-align: right;
+  
+}
+/*css do java*/
+.avaliacao{
+  display: flex;
+ }
+.star-icon{
+  margin-left: 4%;
+  line-height:0.3;
+  list-style-type: none;
+  border:  #fff;
+  cursor: pointer;
+  color: #ffe500;
+  font-size: 50px;/* alterar o tamanho das estrelas */
+}
+.star-icon::before{
+  content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}
+/*css do java*/
+.avaliacao1{
+  display: flex;
+ }
+.star-icon{
+  list-style-type: none;
+  border:  #fff;
+  cursor: pointer;
+  color: #ffe500;
+  font-size: 50px;/* alterar o tamanho das estrelas */
+}
+.star-icon::before{
+  content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}
+/*css do java*/
+.avaliacao2{
+  display: flex;
+  
+ }
+.star-icon{
+  list-style-type: none;
+  border:  #fff;
+  cursor: pointer;
+  color: #ffe500;
+  font-size: 50px;/* alterar o tamanho das estrelas */
+}
+.star-icon::before{
+  content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}
+
+
+
+
+    nav{  flex-direction: row;
+      justify-content: space-around;
+    }
+ 
+    nav ul {
+         flex-direction: row;
+         width: 70%;
+
+    } 
+   
+ #sobre {
+    display:flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: left;
+    padding:0;
+    background-color:#3b84a8;
+    width: 100%;
+}
+
+h1 {justify-self: start;
+    display:flex;
+    flex-direction: column;
+    color:#e68f32;
+    text-align: center;
+    width: 100%;
+}  
+.inf{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 180%;/*texto principal*/
+    justify-self: start;
+    display:flex;
+    flex-direction: column;
+    color:#e68f32;
+    width: 100%;
+
+
+}
+video {
+    width: 100%;
+    height: 100%;
+  }
+
+.ferra {color:#e68f32;
+        font-size: 100%;
+        width: 100%;
+      
+}
+.elemento {
+    width:"100%"; 
+    width:180px;
+    height: 100px;
+   
+
+  }
+
+
+
+}
+@media only screen and (max-width: 480px) {
+
+  .coluna{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+      
+  .coluna .card{
+    position: relative;
+    padding: 1px;
+    background-color: #3b84a8;
+    margin: 10px;
+    border: 1px solid #f3630f;
+    border-radius: 5px;
+    width:"100%"; 
+    width:340px;
+    height: 590px;
+    text-align: justify;
+  }
+  .TSobre{
+    text-align:center;
+    color:#FFFFFF;
+    line-height:1.0;
+    font-size:140%;
+    margin: 0px 40px 0px 40px;
+    
+  }
+  .avaliacao{
+    display: flex;
+   }
+   .avaliacao1{
+    display: flex;
+   }
+  /*---------------------------*/
+  .avaliacao2{
+    display: flex;
+    
+   }
+  .star-icon{
+    line-height:0.3;
+    list-style-type: none;
+    border:  #fff;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 50px;/* alterar o tamanho das estrelas */
+  }
+  .star-icon::before{
+    content: "\2605";
+  }
+  .star-icon.ativo ~ .star-icon::before{
+    content: "\2606";
+  }
+  .avaliacao:hover .star-icon::before{
+    content: "\2605";
+  }
+  .star-icon:hover ~ .star-icon::before{
+    content: "\2606";
+  }
+  
+      nav{  flex-direction: column;
+        justify-content: space-around;
+      }
+   
+      nav ul {
+           flex-direction: column;
+           width: 70%;
+  
+      } 
+     
+      .TituloSobre{
+        line-height:20px ;
+        text-align: justify;
+        color:#FFFFFF;
+        line-height:1.8;
+        font-size:170%;
+      }   
+      .nomeCont{
+        display: flex;
+         font-size:180%;
+         color:#05131f;
+       
+         text-align: center;
+         flex-direction: column;
+         line-height:0px;
+       }
+
+       .imgLogCont{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+         
+          width:"100%" ;
+    
+      }
+      .Ava1{
+        font-size: 150%;
+        color:#FFFFFF;
+        width:"100%"; 
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 0.1px;
+    }
+    .contatos1{
+      color:#de7e18;
+      position: relative;
+      margin-right:70%;
+      top: 10%;
+      line-height:20px ;
+      font-size:150%;
+      
+    }
+}
